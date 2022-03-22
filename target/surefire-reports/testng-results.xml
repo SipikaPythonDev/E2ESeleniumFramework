@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-22T11:47:15 IST" name="All Test Suite" finished-at="2022-03-22T11:49:15 IST" duration-ms="120565">
+    <groups>
+    </groups>
+    <test started-at="2022-03-22T11:47:15 IST" name="Validate Navigation Bar" finished-at="2022-03-22T11:47:57 IST" duration-ms="42172">
+      <class name="Academy.ValidateNavigationBar">
+        <test-method is-config="true" signature="initObj()[pri:0, instance:Academy.ValidateNavigationBar@64e7619d]" started-at="2022-03-22T11:47:15 IST" name="initObj" finished-at="2022-03-22T11:47:56 IST" duration-ms="41429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initObj -->
+        <test-method signature="validateNavBar()[pri:0, instance:Academy.ValidateNavigationBar@64e7619d]" started-at="2022-03-22T11:47:56 IST" name="validateNavBar" finished-at="2022-03-22T11:47:56 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateNavBar -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Academy.ValidateNavigationBar@64e7619d]" started-at="2022-03-22T11:47:56 IST" name="quitDriver" finished-at="2022-03-22T11:47:57 IST" duration-ms="650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Academy.ValidateNavigationBar -->
+    </test> <!-- Validate Navigation Bar -->
+    <test started-at="2022-03-22T11:47:15 IST" name="Validate Title" finished-at="2022-03-22T11:48:19 IST" duration-ms="64486">
+      <class name="Academy.ValidateTitle">
+        <test-method is-config="true" signature="initObj()[pri:0, instance:Academy.ValidateTitle@2a7ed1f]" started-at="2022-03-22T11:47:15 IST" name="initObj" finished-at="2022-03-22T11:48:18 IST" duration-ms="63439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initObj -->
+        <test-method signature="validateAppTitle()[pri:0, instance:Academy.ValidateTitle@2a7ed1f]" started-at="2022-03-22T11:48:18 IST" name="validateAppTitle" finished-at="2022-03-22T11:48:18 IST" duration-ms="29" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED CO123URSESE] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED CO123URSESE] but found [FEATURED COURSES]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1413)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at Academy.ValidateTitle.validateAppTitle(ValidateTitle.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:32)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:467)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAppTitle -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Academy.ValidateTitle@2a7ed1f]" started-at="2022-03-22T11:48:19 IST" name="quitDriver" finished-at="2022-03-22T11:48:19 IST" duration-ms="657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Academy.ValidateTitle -->
+    </test> <!-- Validate Title -->
+    <test started-at="2022-03-22T11:47:15 IST" name="Validate User Login" finished-at="2022-03-22T11:49:15 IST" duration-ms="120565">
+      <class name="Academy.HomePage">
+        <test-method is-config="true" signature="initObj()[pri:0, instance:Academy.HomePage@452e19ca]" started-at="2022-03-22T11:47:15 IST" name="initObj" finished-at="2022-03-22T11:49:13 IST" duration-ms="118669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initObj -->
+        <test-method signature="basePageNevigation()[pri:0, instance:Academy.HomePage@452e19ca]" started-at="2022-03-22T11:49:13 IST" name="basePageNevigation" finished-at="2022-03-22T11:49:14 IST" duration-ms="839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNevigation -->
+        <test-method signature="loginPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.HomePage@452e19ca]" started-at="2022-03-22T11:49:14 IST" name="loginPageTest" data-provider="getData" finished-at="2022-03-22T11:49:14 IST" depends-on-methods="Academy.HomePage.basePageNevigation" duration-ms="207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricteduser@qw.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Restrcited User]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTest -->
+        <test-method signature="loginPageTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:Academy.HomePage@452e19ca]" started-at="2022-03-22T11:49:14 IST" name="loginPageTest" data-provider="getData" finished-at="2022-03-22T11:49:15 IST" depends-on-methods="Academy.HomePage.basePageNevigation" duration-ms="189" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[restricteduser@qw.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456788]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Non restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTest -->
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:Academy.HomePage@452e19ca]" started-at="2022-03-22T11:49:15 IST" name="quitDriver" finished-at="2022-03-22T11:49:15 IST" duration-ms="647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+      </class> <!-- Academy.HomePage -->
+    </test> <!-- Validate User Login -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
