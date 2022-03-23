@@ -24,7 +24,7 @@ public class LandingPage extends Base {
 
     public void newsLetterFrame()
     {
-        WebDriverWait w = new WebDriverWait(driver,10);
+        WebDriverWait w = new WebDriverWait(driver,5);
         w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='sumome-react-wysiwyg-component sumome-react-wysiwyg-popup-background sumome-react-wysiwyg-background']")));
         System.out.println("Running");
         driver.findElement(By.xpath("//button[text()='NO THANKS']")).click();
