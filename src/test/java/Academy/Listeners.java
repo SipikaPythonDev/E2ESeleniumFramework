@@ -16,7 +16,7 @@ public class Listeners extends Base implements ITestListener {
 
     ExtentTest test;
     ExtentReports extent= ExtentRepoterNG.getReportObject();
-    //Making Testcases thread case so that test cases can be run parallel
+    //Making Testcases thread safe so that test cases can be run parallel
     ThreadLocal<ExtentTest> extentTest =new ThreadLocal<ExtentTest>();
     @Override
     public void onTestStart(ITestResult result) {
@@ -50,8 +50,7 @@ public class Listeners extends Base implements ITestListener {
         }
 
         try {
-            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName,driver), testMethodName);
-
+            extentTest.get().addScreenCaptureFromPath(getScreenShotPath(testMethodName, driver), testMethodName);
             //getScreenShotPath(testMethodName,driver); //for sequential run
         } catch (IOException e) {
             e.printStackTrace();

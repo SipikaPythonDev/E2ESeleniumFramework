@@ -33,7 +33,7 @@ public class ValidateTitle extends Base {
         //one is inheritance
 
         //compare the text from the browser with actual text.- Error..
-        Assert.assertEquals(landobj.getTitle().getText(), "FEATURED COURSE");
+        Assert.assertEquals(landobj.getTitle().getText(), "FEATURED C123OURSEses");
         //log.info("Successfully validated Text message");
         System.out.println("Test completed");
 
